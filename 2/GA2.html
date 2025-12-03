@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ga-Dangme Festival | Homowo Celebration</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    .hero-bg {
+      background-image: url('Chefs in meeting.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 scroll-smooth">
+
+  <!-- NAVIGATION BAR -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <h1 class="text-2xl font-bold text-red-700">Ga-Dangme Festival</h1>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 font-medium">
+      <li><a href="#home" class="hover:text-red-600">Home</a></li>
+      <li><a href="#about" class="hover:text-red-600">About</a></li>
+      <li><a href="#gallery" class="hover:text-red-600">Gallery</a></li>
+      <li><a href="#info" class="hover:text-red-600">Festival Info</a></li>
+      <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">☰</button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4 px-6 space-y-4 text-lg font-medium">
+    <a href="#home" class="block hover:text-red-600">Home</a>
+    <a href="#about" class="block hover:text-red-600">About</a>
+    <a href="#gallery" class="block hover:text-red-600">Gallery</a>
+    <a href="#info" class="block hover:text-red-600">Festival Info</a>
+    <a href="#contact" class="block hover:text-red-600">Contact</a>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-6">
+    <div class="bg-black/50 p-10 rounded-xl text-white max-w-3xl" data-aos="fade-up">
+      <h2 class="text-5xl font-extrabold mb-4">Homowo Festival 2025</h2>
+      <p class="text-lg mb-6">Celebrating our heritage, unity, and the triumph over hunger.</p>
+      <a href="#info" class="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg text-white font-semibold">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <!-- News Headline Section -->
+<section id="news" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6 aos-fade-up">Latest Festival News</h2>
+    <div class="bg-gray-100 p-6 rounded-xl shadow aos-fade-up">
+      <h3 class="text-xl font-semibold mb-2">Ga-Dangme Cultural Festival 2025: Bigger, Brighter, and More Colorful!</h3>
+      <p class="text-gray-700">This year’s festival promises an expanded cultural parade, traditional music showcases, and a new youth innovation expo. Stay tuned for more updates as we countdown to the grand celebration.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-right">
+      <div>
+        <h3 class="text-4xl font-bold text-red-700 mb-4">About Homowo</h3>
+        <p class="text-lg leading-relaxed mb-4">Homowo, meaning "hooting at hunger," is a major Ga-Dangme festival celebrating the overcoming of famine and the blessing of abundance.</p>
+        <p class="text-lg leading-relaxed">Families, chiefs, and the diaspora come together to sprinkle **kpokpoi**, dance to traditional drums, and honor ancestors.</p>
+      </div>
+      <img src="Pourinhg libation.jpg" class="rounded-xl shadow-lg" alt="Kpokpoi" />
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center text-red-700 mb-12" data-aos="fade-up">Festival Gallery</h3>
+      <div class="grid md:grid-cols-3 gap-6" data-aos="fade-up">
+        <img src="Grand Durbar.jpg" class="rounded-xl shadow-md hover:scale-105 transition" />
+        <img src="Farming.jpg" class="rounded-xl shadow-md hover:scale-105 transition" />
+        <img src="Chefs in meeting.jpg" class="rounded-xl shadow-md hover:scale-105 transition" />
+      </div>
+    </div>
+  </section>
+
+  <!-- INFORMATION SECTION -->
+  <section id="info" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h3 class="text-4xl font-bold text-red-700">Festival Information</h3>
+      <p class="mt-3 text-lg">Everything you need to know for the 2025 Homowo celebration.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8" data-aos="fade-up">
+      <div class="p-6 bg-white rounded-xl shadow-md border">
+        <h4 class="text-xl font-semibold mb-2">📅 Date</h4>
+        <p>Full festival schedule coming soon.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-md border">
+        <h4 class="text-xl font-semibold mb-2">📍 Location</h4>
+        <p>Accra, Ghana & Ga-Dangme communities worldwide.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-md border">
+        <h4 class="text-xl font-semibold mb-2">🎉 Activities</h4>
+        <p>Kpokpoi sprinkling, drumming, dancing, processions & more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h3 class="text-4xl font-bold text-red-700 mb-4">Contact Us</h3>
+      <p class="text-lg mb-4">Have questions or want to participate?</p>
+      <a href="mailto:info@gadangmefest.org" class="text-red-600 font-semibold text-lg">info@gadangmefest.org</a>
+
+      <div class="flex justify-center space-x-8 mt-6 text-3xl">
+        <i class="fab fa-facebook text-gray-700 hover:text-red-600"></i>
+        <i class="fab fa-instagram text-gray-700 hover:text-red-600"></i>
+        <i class="fab fa-twitter text-gray-700 hover:text-red-600"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-gray-900 text-white text-center">
+    <p>&copy; 2025 Ga-Dangme Festival. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
